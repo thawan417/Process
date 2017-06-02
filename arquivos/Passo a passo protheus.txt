@@ -1,0 +1,41 @@
+﻿
+
+Caso se o servidor desligar e ter que subir novamente seguir procedimento:
+
+ ------------------------------------------------------------------------------------------
+                      FECHE TODOS PROCESSOS  SERVER, License, DBacess , SmartCliente HTML 
+ ------------------------------------------------------------------------------------------
+
+1.      Acessar os serviços e subir os serviços na ordem dos tópicos
+
+2.      Verifique se o SQL SERVER está ok (Serviço automático) – Se o SQL não estiver ativo terá um erro ao tentar acessar o protheus tobconnect -35 falha de comunicação OBDC – probabilidade de acontecer.. nunca ocorreu até mesmo porque o server não cai
+
+3.      Verifique o serviço .Totvs License Server 2014 (serviço automático) – como te disse ele é responsável por todas as licenças se não tiver ativo não irá conseguir acessar o protheus terá informação de limite de conexões atingidas… e ninguém irá conseguir acessar nem os agentes
+
+4.      TotvsDbacess 4.2 Server (Serviço automático) responsável pela integração entre ODC , licenser e ambientes – se tiver fora do ar também terá um retorno 35 falha de comunicação de banco
+
+5.      .Protheus 11 – SERVER IFENACON (Serviço automático) – Este é o serviço mais importante é o serviço do protheus(Server) como lhe informei subo ele por JOB… porém deixei como serviço automático dando um problema o protheus não fica fora do ar, via prompt vc verá tudo o que está sendo executado… diferente do monitor que é interface gráfica e limita scripts a visualização de schedules ou scripts que é executada
+
+6.      Totvs SmartclientHTML (Serviço automático) – Sem ele é impossível dos agentes acessarem o sistema, como é uma versão nova ainda não tive tempo para corrigir os erros de versões de incompatibilidade com IE anterior a versão 9.0 – Também como é uma rotina nova não sei se vai dar algum problema startando se precisar subir na mão é só ir no tomcat 7.0 e subir
+
+7.      .TSS- (Serviço Automático) RESPONSÁVEL PELAS TRANSMISSÃO DAS NOTAS FISCAIS
+
+ 
+
+ 
+
+Até o item 6 são serviços necessários para o protheus está no ar. Abaixo JOBS manuais são importantes, eles que fazem a gravação de novos pedidos, MI e emissão de notas fiscais
+
+ 
+
+8.      Ws GERAPEDIDO – (na área de trabalho – responsável pela gravação de pedidos e MI)
+
+9.      JOB – DATA DE EMISSÃO – (na área de trabalho – responsável por verificar todos os pedidos sem nota e que foram emitidos e gerar nf)
+
+10.  JOB – DATA DE VERIFICAÇÃO – (na área de trabalho – responsável por verificar todos os pedidos sem nota e que foram emitidos e gerar nf)
+
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ Final do processo, Deixe apenas o APP SERVER EXECUTANDO NO USUARIO DO PROTHEUS 
+
+ GeraPedido E Verificação Deixa no USUARIO DA MICROSIGA ( TV ) 

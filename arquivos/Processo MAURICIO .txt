@@ -1,0 +1,39 @@
+﻿=========================================================================================
+=========================================================================================	 
+      ( PROJETO ) 
+	  
+	  1-  Montar um projeto no java
+	  3- Usar como gerenciador de codigo fonte o GIT
+	  2- Usar MAVEN como Gerenciador de Dependencias 
+	  4- Montar servidor de integração continua usando Jenkins 
+=========================================================================================	  
+	  
+
+
+
+=========================================================================================
+       SCRIPT PARA EXECUTAR WINDOWS DENTRO DO JENKINS ( MANUALMENTE ) DEPLOY DENTRO DO TOMCAT MANUALMENTE
+ 
+Copy "C:\Program Files (x86)\Jenkins\workspace\argentum\target\argentum-web.war" "C:\Users\thawan.silva\Downloads\apache-tomcat-8.5.13-windows-x64\apache-tomcat-8.5.13\webapps" 
+Copy "C:\Program Files (x86)\Jenkins\workspace\argentum\target\argentum-web.war" "C:\Users\thawan.silva\Downloads\apache-tomcat-8.5.13-windows-x64\apache-tomcat-8.5.13\webapps" 
+
+https://TI-03.ifenacon.com:8443/svn/TESTE/
+=========================================================================================
+
+Repositorio SVN SERVER 
+
+Obrigatorio todos projetos usar MAVEN como dependencias. 
+
+
+
+=========================================================================================
+
+Jenkins rodando no servidor. 
+Maven configurado
+GIT instalado
+SVN Instalado. 
+
+Tomcat 8.0 Rodando junto ao jenkins 
+
+
+=========================================================================================

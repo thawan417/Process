@@ -1,0 +1,38 @@
+DERRUBA TUDO E SOBE NOVAMENTE 
+
+APP SERVER
+VERIFICAÇÂO
+WS GERAPEDIDO 
+TSS 
+
+
+
+
+1 - Visualizar os processos SHOW ALL PROCESS ( FINALIZAR PELO SERVICES ) 
+
+2 - Se o processo não finalizar ( Lembre-se, Existe 2 usuarios protheus e microsiga, um processo pode estar aberto no outro. Então Finalize o processo  e abra novamente ) 
+
+
+1 - Finaliza o protheus -SERVER IFEN - Show todos processos 
+
+
+2 - Por ultimo Reinicia o Protheus Service pelo
+services.msc  
+
+2 Server ifen a descrição 
+
+
+Caso acessar modulo faturamento não ter acessos. Olhar o Processo *TSS*
+
+------------------------------------------
+
+APP SERVER  
+
+-- 3 Startar WS WEB SERVICE -- 
+
+-- 4 Startar licenses -- 
+( Usuario ) 
+
+192.168.30.5
+microsiga
+msiga#2015ti
