@@ -35,5 +35,11 @@ SVN Instalado.
 
 Tomcat 8.0 Rodando junto ao jenkins 
 
-
 =========================================================================================
+
+                  ( PROJETO NOVO ) 
+
+Instalar servidor GIT no GOLF. ( opções GIT Bonobo , GitBlit )  
+Rodar jenkins junto ao novo servidor de versões.
+
+Projetos futuros ( Intranet  Joomla .. ) 
