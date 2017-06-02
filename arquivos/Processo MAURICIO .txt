@@ -43,3 +43,5 @@ Instalar servidor GIT no GOLF. ( opções GIT Bonobo , GitBlit )
 Rodar jenkins junto ao novo servidor de versões.
 
 Projetos futuros ( Intranet  Joomla .. ) 
+
+Por que utilizar GIT SERVER ? Rapidez, e controle total 
